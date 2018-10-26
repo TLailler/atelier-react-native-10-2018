@@ -5,11 +5,11 @@ import OptionMenu from './OptionMenu'
 /**
  * Composant Menu.
  */
-const Menu = () => (
+const Menu = ({showAll,showActives,showTerminees}) => (
     <View style={styles.menu}>
-        <OptionMenu />
-        <OptionMenu />
-        <OptionMenu  />
+          <OptionMenu title="Toutes" filtrer={showAll}/>
+          <OptionMenu title="Actives" filtrer={showActives}/>
+          <OptionMenu title="Terminées" filtrer={showTerminees}/>
     </View>
 )
 
